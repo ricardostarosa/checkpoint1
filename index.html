@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Sobre Cidade do Salvador - Salve, salvador!</title>
+    <meta name="description" content="Imagens e Curiosidades da cidade de São Salvador. Capital do estado da Bahia.">
+    <meta name="robots" content="noimageindex">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="creator" content="Ricardo Silva">
+
+     <!-- Opengraph -->
+     <meta property="og:locale" content="pt_BR">
+     <meta property="og:type" content="website">
+     <meta property="og:title" content="Sobre a cidade do Salvador">
+     <meta property="og:description" content="Imagens e Curiosidades da cidade de São Salvador. Capital do estado da Bahia.">
+     <meta property="og:url" content="#">
+     <meta property="og:site_name" content="Salve, Salvador">
+     <meta property="og:image" content="imgs/farol.jpg">
+   
+    <!-- Fontes externas -->
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@900&family=Kanit:wght@200;600&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" href="imgs/favicon.png">
+    
+    <style>
+
+       *{
+
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            
+            
+         }
+
+        body{
+
+            background: rgb(197, 197, 197) url(imgs/body-bg.jpg) fixed;
+            background-size: contain;
+            font-family: 'Exo', sans-serif;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+
+            
+        }
+
+        /* bara topo */
+
+        .barra-topo{
+
+            background: #2165CC url(imgs/logo.png) no-repeat center;
+            padding: 10px 0 40px;
+            width: 100%;
+            text-align: center;
+            font-weight: 700;
+            color: white;
+            font-size: 1.8rem;
+            text-indent: -3000px;
+            position: fixed;
+            z-index: 9;
+            
+        }
+
+        /* estilo padrao das caixas + */
+
+        .descubra-mais{
+
+            position: relative;
+            top: 100px;
+            right: -40px;
+            background-color: #CFF957;
+            padding: 10px 8px;
+            display: inline;
+            text-align: center;
+            font-size: 2.4em;
+            z-index: 5;
+
+        }
+
+        .pontos-turisticos{
+
+            width: 95%;
+            border: 2px solid #061D3F;
+            background-color:rgb(133, 109, 96);
+            margin: 80px auto 5px;
+            overflow: hidden;
+            padding: 0  0 10px 0;
+
+        }
+
+        
+
+        /* conteudo principal */
+       
+       
+       .container{
+
+            margin: 0px auto;
+            width: 80%;
+            background: url(imgs/grid-bg.png);
+            overflow: hidden;
+        }
+
+        .conteudo-main{
+
+            
+            padding-top: 20px;
+            height: 550px;
+            width: 90%;
+            margin: 0 auto;
+            
+        }
+
+
+        .foto-principal img{
+
+            background-color: seashell;
+            width: 70%;
+            padding: 10px;
+        }
+        
+        .legenda-foto{
+            width: 200px;
+            background-color: rgb(73, 43, 30);
+            text-align: center;
+            padding: 2px;
+            color: silver;
+            font-weight: bold;
+        }
+
+        .texto-principal {
+
+            position: relative;
+            top: -400px;
+            left: 480px;
+            width: 580px;
+            height: 420px;
+            background-color: #D6F6DF;
+            padding: 20px;
+        }
+
+        .titulo-resumo-salvador{
+
+            color: rgb(19, 2, 114);
+            font-size: 2.5rem;
+            font-weight: bolder;
+        }
+
+        .descricao-cidade{
+
+            font-size: 1.2rem;
+            width: 550px;
+            height: 200px;
+            padding-top: 30px;
+            line-height: 40px;
+            color: rgb(22, 0, 73) ;
+        }
+       
+        
+         /* curiosidades */
+
+        .curiosidades li{
+
+            color: rgb(19, 2, 114);
+            list-style: none;
+            background-color: #D6F6DF;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding: 8px 12px;
+            font-size: 1.5em;
+            /* font-weight: bolder; */
+            text-transform: uppercase;
+        }
+
+        .texto-curiosidades p{
+
+            margin-top: 8px;
+            line-height: 20px;
+
+
+}
+
+            /* iframe - video de imagens da cidade */
+
+         .youtube{
+
+             position: relative;
+             top: 5px ;
+             height: 600px;
+             z-index: 0;
+        }
+
+      
+
+        /* link para outras partes da cidade */
+
+        
+
+         /* configuracao link com imagens: - baia/ mam/ centro historico */
+        
+        .ponto1{
+
+            float: left;
+            margin-left: 55px;
+            margin-top: -70px;
+            
+        }
+
+        .ponto1 img{
+
+            border: 4px solid white
+        }
+
+        
+        .titulo-pontos-turisticos{
+
+            position: relative;
+            bottom: -250px;
+            background-color: rgba(255, 255, 255, 0.753);
+            text-align: center;
+            padding: 40px 10px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            z-index: 5;
+        }
+        
+       
+        a{
+
+            text-decoration: none;
+        }
+
+        .ponto1 :hover{
+
+            
+            background: rgba(126, 252, 0, 0.589);
+            color: white;
+            transition: 0.5s;
+            
+        }
+
+
+         /* link redes sociais */
+
+        .siga-nas-redes{
+
+            /* background-color: red; */
+            border-width: 4px;
+            border-style: solid;
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+            width: 600px;
+            margin: 90px auto 90px;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .siga-nas-redes h2{
+
+            font-size: 1.5rem;
+            width: 300px;
+            color: white;
+            margin: 0px auto 30px;
+            background-color: rgb(41, 100, 189);
+            padding: 5px;
+        }
+
+        .siga-nas-redes ul li{
+
+            list-style: none;
+            float: left;
+            background-color: ivory;
+            padding: 20px;
+            margin-top: 10px;
+            margin-left: 35px;
+        }
+
+
+        /* footer */
+
+        .footer{
+
+            background-color: #061D3F;
+            text-align: center;
+            padding: 80px;
+        }
+
+        .footer li{
+
+            list-style: none;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            color: rgb(153, 153, 153);
+
+        }
+
+        .titulo-footer{
+
+            font-size: 2em;
+            color: white;
+            margin-bottom: 20px;
+
+        }
+       
+
+    </style>
+    
+    <title>Salve, Salvador!</title>
+</head>
+
+
+<body>
+
+                <!-- inicio topo -->
+
+   <section class="barra-topo">
+
+        <nav class="menu-topo">
+
+            <h1 class="logo">Salve, Salvador!</h1>
+
+        </nav>
+
+   </section>
+
+                <!-- fim topo -->
+
+                <!-- inicio container -->
+
+   <div class="container">
+
+    <header>
+        <h1 class="descubra-mais">Linda D+</h1>
+    </header>
+    
+    <div class="pontos-turisticos">
+
+    <main class="conteudo-main">
+
+            <div class="quadro-principal">
+                <picture class="foto-principal">
+                    <img src="imgs/baia-todos-santos.jpg" alt="">
+                   
+                    <footer>
+                        <h3 class="legenda-foto">Baia de Todos os Santos</h3>
+                    </footer>  
+                </picture>
+                
+            </div>
+
+            <div class="texto-principal">
+            
+                <header>
+                <h1 class="titulo-resumo-salvador">Primeira Capital</h1>
+                </header>
+
+                <article class="descricao-cidade">
+                    Praias, música, museus, cultura, teatros, carnaval, <strong>patrimônio histórico.</strong> São muitas as opções turísticas da capital baiana, <strong>a primeira cidade fundada no Brasil.</strong>
+                    Salvador é o coração histórico do País. Possui o maior número de <strong>igrejas seculares na América</strong>, fundadas nos séculos 16 e 17. Tem também o maior número de fortes e inúmeros casarões antigos. Por cerca de metade dos cinco séculos de História do Brasil, Salvador foi sua maior cidade. Ainda é uma das mais vibrantes.
+                </article>
+            
+            </div>
+
+        </main>
+
+    </div>
+
+        <header>
+            <h1 class="descubra-mais">Saiba +</h1>
+        </header>
+        
+        <article class="pontos-turisticos">
+
+           <ul class="curiosidades">
+               
+                <li>
+                    
+                    <section class="texto-curiosidades">
+                        <h2>Capital da Alegria</h2>
+                            <p>
+                                Salvador já teve alguns apelidos como "Capital da Alegria", por suas festas, e "Roma Negra", por ser a metrópole com maior percentual de negros fora da África.
+                            </p>
+                    </section>
+                
+                </li>
+                
+                <li>
+                    
+                    <section class="texto-curiosidades">
+                        <h2>Igreja do Senhor do Bonfim</h2>
+                            <p>
+                                É a mais procurada pelos baianos e por turistas e tem a famosa lavagem das escadarias do Bonfim. É lá que os turistas amarram as fitinhas e fazem seus pedidos.
+                            </p>
+                    </section>
+                
+                </li>
+               
+                <li>
+                    
+                    <section class="texto-curiosidades">
+                        <h2> Escola de Medicina</h2>
+                            <p>
+                               A faculdade de Medicina da Bahia, da Universidade Federal da Bahia, foi a primeira escola de nível superior no Brasil, criada como Escola de Cirurgia da Bahia em 18 de fevereiro de 1808. 
+                            </p>
+                    </section>
+                
+                </li>
+               
+           
+            </ul>
+        
+        </article>
+        
+        <header>
+            <h1 class="descubra-mais">Veja +</h1>
+        </header>
+        
+        <aside class="pontos-turisticos">
+
+            <iframe class="youtube" width="1280" height="720" src="https://www.youtube.com/embed/LCpU4DgMXzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+
+            </iframe>
+        
+        </aside>
+
+        <header>
+            <h1 class="descubra-mais">Descubra +</h1>
+        </header>
+       
+        <aside class="pontos-turisticos">
+
+           
+            <nav >
+
+                <div class="ponto1">
+
+                    <a a href="https://pt.wikipedia.org/wiki/Ba%C3%ADa_de_Todos-os-Santos" target="_blank">
+                        
+                        <h2 class="titulo-pontos-turisticos">Baia de Todos os Santos</h2>
+                        
+                        
+                    </a>
+                    <img src="imgs/baia-final.png" alt="">
+
+                </div>
+               
+                <div class="ponto1">
+
+                    <a a href="https://pt.wikipedia.org/wiki/Museu_de_Arte_Moderna_da_Bahia" target="_blank">
+                        <h2 class="titulo-pontos-turisticos">MAM</h2>
+                    </a>
+
+                    <img src="imgs/mam-final.png" alt="">
+
+
+                </div>
+               
+                <div class="ponto1">
+
+                   
+
+                    <a a href="https://pt.wikipedia.org/wiki/Centro_Hist%C3%B3rico_de_Salvador" target="_blank">
+
+                        <h2 class="titulo-pontos-turisticos">Centro Histórico</h2>
+                       
+                    </a>
+                    
+                    <img src="imgs/centro-final.png" alt="">
+                </div>
+
+            </nav>
+            
+        </aside>
+
+        <section class="siga-nas-redes">
+
+
+            <header>
+
+                <h2>Acompanhe a Cidade</h2>
+
+            </header>
+
+         <nav>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/visitsalvadordabahia/?hl=en" target="_blank">
+                       <img src="imgs/inst.png" alt="">
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://www.facebook.com/visitsalvadordabahia/" target="blank">
+                        <img src="imgs/face.png" alt="">
+                     </a>
+                </li>
+                
+                <li>
+                    <a href="https://twitter.com/visitsalvador?lang=en" target="blank">
+                        <img src="imgs/twwit.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        </section>
+
+        
+
+   </div>
+
+                <!-- fim container -->
+
+                <!-- inicio footer -->
+   
+    <section class="footer">
+
+            <h2 class="titulo-footer">Checkpoint - FrontEnd</h2>
+            
+            <ul>
+                <li>Aluno: Ricardo Silva</li>
+                <li>Matéria: Front-end 1</li>
+                <li>Professor: Willian Sant Anna</li>
+            </ul>
+
+
+    </section>
+
+                <!-- fim footer -->
+    
+</body>
+</html>
